@@ -1,0 +1,20 @@
+{
+  "photos": [
+
+    {
+      "title": "Andromeda",
+      "date": "2024-06-01",
+      "thumbnail": "./media/andromeda.jpg",
+      "image": "./media/andromeda.jpg",
+      "alt": "Andromeda galaxy in the night sky",
+      "description": "A detailed photograph of the Andromeda galaxy.",
+      "instagram": "https://www.instagram.com/",
+      "details": {
+        "Telescope": "Redcat 51",
+        "Filter": "LRGB, Ha",
+        "Location": "Ireland"
+      }
+    }
+
+  ]
+}

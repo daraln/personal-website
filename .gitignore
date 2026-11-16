@@ -1,0 +1,13 @@
+# Original photography
+/media/*
+!/media/README.md
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# Clutter
+.DS_Store
+Thumbs.db
+.vscode/
