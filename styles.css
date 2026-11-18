@@ -136,7 +136,7 @@ h1 { max-width: 16ch; font-size: clamp(2.7rem, 5.4vw, 5.7rem); font-weight: 580;
 .lightbox-info h2 { font-size: clamp(1.6rem, 2.5vw, 2.3rem); line-height: 1.15; font-weight: 570; letter-spacing: -.04em; }
 .lightbox-details { color: var(--muted); font-size: .93rem; line-height: 1.7; }
 .lightbox-details .photo-description { margin-bottom: 1.65rem; }
-.photo-specs { display: grid; gap: 1rem; margin: 0; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.photo-specs { display: grid; gap: 1rem; margin: 0; padding-top: 1.5rem; border-top: 1px solid var(--line); align-items: center;}
 @container (min-width: 280px) {
   .photo-specs {
     grid-template-columns: repeat(2, minmax(0, 1fr));
