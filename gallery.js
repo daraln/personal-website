@@ -92,9 +92,38 @@
         row.append(makeDetailIcon(label), /* term, */ definition);
         list.append(row);
       }
+      
       content.push(list);
     }
     details.replaceChildren(...content);
+    title.parentElement.querySelector('.photo-info-toggle')?.remove();
+
+    // Switch between desc and details
+    // Mobile: switch between description and capture details
+    if (details.querySelector('.photo-description') &&
+        details.querySelector('.photo-specs')) {
+
+      const toggle = document.createElement('button');
+      toggle.type = 'button';
+      toggle.className = 'photo-info-toggle';
+
+      let showingSpecs = false;
+
+      function updateView() {
+        details.dataset.view = showingSpecs ? 'specs' : 'description';
+        toggle.textContent = showingSpecs
+          ? '← Description'
+          : 'Capture details →';
+      }
+
+      toggle.addEventListener('click', () => {
+        showingSpecs = !showingSpecs;
+        updateView();
+      });
+
+      updateView();
+      title.parentElement.append(toggle);
+    }
 
     const url = instagramUrl(photo.instagram);
     instagram.hidden = !url;

@@ -187,3 +187,65 @@ h1 { max-width: 16ch; font-size: clamp(2.7rem, 5.4vw, 5.7rem); font-weight: 580;
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+/* Photo detail/description toggle for mobile */
+/* Hide photo info toggle on desktop */
+.photo-info-toggle {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .photo-info-toggle {
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 0.9rem;
+    border: none;
+    background: none;
+    color: var(--accent);
+    font: inherit;
+    cursor: pointer;
+  }
+
+  /* Show only selected view */
+  .lightbox-details[data-view="description"] .photo-specs,
+  .lightbox-details[data-view="specs"] .photo-description {
+    display: none;
+  }
+
+  /* Remove spacing */
+  .lightbox-details .photo-description {
+    margin-bottom: 0;
+  }
+
+  .lightbox-details[data-view="specs"] .photo-specs {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  /* Keep long descriptions or specifications compact */
+  .lightbox-details[data-view] .photo-description,
+  .lightbox-details[data-view] .photo-specs {
+    max-height: 11rem;
+    overflow-y: auto;
+  }
+}
+
+/* Details button goes to right of title */
+.lightbox-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.lightbox-title-row h2 {
+  min-width: 0;
+}
+
+@media (max-width: 750px) {
+  .photo-info-toggle {
+    margin: 0;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+}
