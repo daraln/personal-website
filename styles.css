@@ -249,3 +249,44 @@ h1 { max-width: 16ch; font-size: clamp(2.7rem, 5.4vw, 5.7rem); font-weight: 580;
     white-space: nowrap;
   }
 }
+
+/* Project card images */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 70%;
+  height: 85%;
+
+  background-image: var(--project-image);
+  background-size: var(--project-image-size, cover);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  opacity: 0.35;
+  filter: grayscale(70%);
+
+  mask-image: radial-gradient(
+    ellipse var(--project-fade-width, 100%)
+            var(--project-fade-height, 65%)
+            at top right,
+    black 10%,
+    transparent 45%
+  );
+
+  pointer-events: none;
+}
+
+/* Text stays above the image */
+.project-card > * {
+  position: relative;
+  z-index: 1;
+}
