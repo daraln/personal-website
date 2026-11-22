@@ -1,7 +1,4 @@
-/*
- * A minimal, framework-free starter stylesheet.
- * All colours and shared spacing can be adjusted here.
- */
+/* Theme colours */
 :root {
   color-scheme: dark;
   --bg: #101318;
