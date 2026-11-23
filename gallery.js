@@ -65,7 +65,25 @@
   function show(index) {
     current = (index + photos.length) % photos.length;
     const photo = photos[current];
+
+    // flicker fix
+    image.style.visibility = 'hidden';
+
+    image.onload = () => {
+      image.style.visibility = 'visible';
+    };
+
+    image.onerror = () => {
+      image.style.visibility = 'visible';
+    };
+
     image.src = photo.image;
+
+    // display immediately if cached
+    if (image.complete && image.naturalWidth) {
+      image.style.visibility = 'visible';
+    }
+
     image.alt = photo.alt || photo.title;
     title.textContent = photo.title;
 
