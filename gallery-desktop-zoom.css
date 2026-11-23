@@ -1,0 +1,36 @@
+/* desktop zoom for gallery */
+@media (hover: hover) and (pointer: fine) {
+  .photo-lightbox .lightbox-image-panel.desktop-zoom-host {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .photo-lightbox .lightbox-image-panel.desktop-zoom-ready > #lightbox-image {
+    opacity: 0;
+  }
+
+  .desktop-zoom-stage:not([hidden]) {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    overflow: hidden;
+    cursor: zoom-in;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .desktop-zoom-stage.is-zoomed { cursor: grab; }
+  .desktop-zoom-stage.is-dragging { cursor: grabbing; }
+
+  .desktop-zoom-stage .desktop-zoom-image {
+    position: absolute;
+    display: block;
+    max-width: none;
+    max-height: none;
+    object-fit: fill;
+    transform-origin: center center;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+}
+.desktop-zoom-stage[hidden] { display: none; }
