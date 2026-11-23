@@ -257,11 +257,7 @@ h1 { max-width: 16ch; font-size: clamp(2.7rem, 5.4vw, 5.7rem); font-weight: 580;
 .project-card::before {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-
-  width: 70%;
-  height: 85%;
+  inset: 0;
 
   background-image: var(--project-image);
   background-size: var(--project-image-size, cover);
