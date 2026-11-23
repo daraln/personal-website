@@ -3,7 +3,7 @@
 
     {
       "title": "Cloudy Skies",
-      "thumbnail": "./media/astrophotography/AN 3840.jpg",
+      "thumbnail": "./media/astrophotography/thumbs/cloudy-skies_thumb.png",
       "image": "./media/astrophotography/AN 3840.jpg",
       "alt": "A picture of the North American Nebula in narrowband colours",
       "description": "The North American Nebula captured in the hubble palette of narrowband colours. Here, specific filters are used to highlight the emission of hydrogen, oxygen and sulphur in the nebula.",
@@ -17,7 +17,7 @@
 
     {
       "title": "Andromeda",
-      "thumbnail": "./media/astrophotography/thumbs/Core1440p.jpg",
+      "thumbnail": "./media/astrophotography/thumbs/andromeda_thumb.jpg",
       "image": "./media/astrophotography/Andromeda.jpg",
       "alt": "Andromeda galaxy in the night sky",
       "description": "The Andromeda galaxy, the closest major galaxy to our own. Shown here in detail with it's stunning core and spiral arms visible. Additional data highlighting the hydrogen-alpha emission lines has been included to show nebulae circling the galaxy.",
@@ -32,7 +32,7 @@
     {
       "title": "Mineral Moon",
       "date": "2021-08-28",
-      "thumbnail": "./media/astrophotography/Lrgb10-8.jpg",
+      "thumbnail": "./media/astrophotography/thumbs/mineral-moon_thumb.png",
       "image": "./media/astrophotography/Lrgb10-8.jpg",
       "alt": "A colourfulpicture of the Moon in the night sky",
       "description": "This image of the moon was captured as a four-panel mosaic. Thousands of frames taken in separate colour channelshave been stacked to provide the clearest detail possible given the viewing conditions. The saturation has been adjusted to reveal the mineral composites on the lunar surface, which provides the blue and red hues.",
@@ -47,7 +47,7 @@
 
     {
       "title": "The Orion Nebula",
-      "thumbnail": "./media/astrophotography/OrionNebula.jpg",
+      "thumbnail": "./media/astrophotography/thumbs/the-orion-nebula_thumb.png",
       "image": "./media/astrophotography/OrionNebula.jpg",
       "alt": "A picture of the Orion Nebula in the night sky",
       "description": "The Orion Nebula, the famous \"stellar nursery\" in the constellation Orion. It is bright enough to be seen with the naked eye. Here, it is shown in its natural colours, with enhanced detail using data captured with a Ha filter. The dusty clouds surrounding the bright core can be seen fading into the darkness.",
