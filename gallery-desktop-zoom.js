@@ -7,7 +7,7 @@
 
   const desktop = window.matchMedia('(hover: hover) and (pointer: fine)');
   // zoom variables
-  const MAX_ZOOM = 3;
+  const MAX_ZOOM = 2;
   const DOUBLE_CLICK_ZOOM = 2;
   const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
 
