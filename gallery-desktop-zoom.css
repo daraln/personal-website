@@ -3,10 +3,7 @@
   .photo-lightbox .lightbox-image-panel.desktop-zoom-host {
     position: relative;
     overflow: hidden;
-  }
-
-  .photo-lightbox .lightbox-image-panel.desktop-zoom-ready > #lightbox-image {
-    opacity: 0;
+    cursor: zoom-in;
   }
 
   .desktop-zoom-stage:not([hidden]) {
@@ -14,11 +11,10 @@
     inset: 0;
     z-index: 1;
     overflow: hidden;
-    cursor: zoom-in;
+    cursor: grab;
     user-select: none;
     -webkit-user-select: none;
   }
-  .desktop-zoom-stage.is-zoomed { cursor: grab; }
   .desktop-zoom-stage.is-dragging { cursor: grabbing; }
 
   .desktop-zoom-stage .desktop-zoom-image {
