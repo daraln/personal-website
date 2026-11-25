@@ -261,7 +261,7 @@ h1 { max-width: 16ch; font-size: clamp(2.7rem, 5.4vw, 5.7rem); font-weight: 580;
 
   background-image: var(--project-image);
   background-size: var(--project-image-size, cover);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: top right;
 
   opacity: 0.35;
@@ -269,11 +269,14 @@ h1 { max-width: 16ch; font-size: clamp(2.7rem, 5.4vw, 5.7rem); font-weight: 580;
 
   mask-image: radial-gradient(
     ellipse var(--project-fade-width, 100%)
-            var(--project-fade-height, 65%)
+            100%
             at top right,
     black 10%,
     transparent 45%
   );
+  mask-size: 100% min(var(--project-fade-height, 65%), var(--project-max-fade-height, 65%));
+  mask-position: top right;
+  mask-repeat: no-repeat;
 
   pointer-events: none;
 }
@@ -282,4 +285,14 @@ h1 { max-width: 16ch; font-size: clamp(2.7rem, 5.4vw, 5.7rem); font-weight: 580;
 .project-card > * {
   position: relative;
   z-index: 1;
+}
+
+@media (max-width: 590px) {
+  .project-card {
+    min-width: 300px;
+  }
+
+  .project-grid {
+    overflow-x: auto;
+  }
 }
