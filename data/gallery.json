@@ -11,6 +11,7 @@
       "details": {
         "Telescope": "Redcat 51",
         "Filter": "SII, Ha, OIII",
+        "Object": "NGC 7000",
         "Location": "Ireland"
       }
     },
@@ -25,6 +26,7 @@
       "details": {
         "Telescope": "Redcat 51",
         "Filter": "LRGB, Ha",
+        "Object": "M31",
         "Location": "Ireland"
       }
     },
@@ -55,6 +57,7 @@
       "details": {
         "Telescope": "Redcat 51",
         "Filter": "HaRGB",
+        "Object": "M42",
         "Location": "Ireland"
       }
     }
